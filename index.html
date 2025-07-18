@@ -1,0 +1,95 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MKM ONLINE CYBER PLATFORM</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+    header {
+      background-color: #004d40;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .product {
+      background-color: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .cart-btn {
+      background-color: #26a69a;
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+    footer {
+      background-color: #004d40;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MKM ONLINE CYBER PLATFORM</h1>
+    <p>Second-Hand Deals You Can Trust</p>
+    
+  </header>
+
+  <section class="product-grid">
+    <div class="product">
+      <img src="printer.jpeg" alt="Item 1">
+      <h3>Used printer</h3>
+      <p>Ksh 5,000</p>
+      <button class="cart-btn" onclick="orderItem('Used printer, 5000)">Order via WhatsApp</button>
+    </div>
+    <div class="product">
+      <img src="laptop hp pro book.jpeg" alt="Item 2">
+      <h3>Second-Hand Laptop</h3>
+      <p>Ksh 15,000</p>
+      <button class="cart-btn" onclick="orderItem('Second-Hand Laptop', 15000)">Order via WhatsApp</button>
+    </div>
+    <div class="product">
+      <img src="cat 6.jpeg" alt="Item 3">
+      <h3>CAT 6 CABLE</h3>
+      <p>Ksh 30 Per Metre</p>
+      <button class="cart-btn" onclick="orderItem('new cat 6 cable', 2500)">Order via WhatsApp</button>
+    </div>
+    <div class="product">
+      <img src="F6 Tenda Router.jpeg" alt="item 4">
+    <h3>F6 Tenda Router</h3>
+      <p>Ksh 1850</p>
+      <button class="cart-btn" onclick="orderItem('new F6 Router', 2500)">Order via WhatsApp</button>  
+    </div>
+  </section>
+
+  <footer>
+    <p>Contact us: mkmonlinecyber@gmail.com | WhatsApp: 0791398996</p>
+  </footer>
+
+</body>
+</html>
