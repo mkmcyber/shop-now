@@ -365,7 +365,174 @@ color:#aaa;
 
 }
 
+/* PPOE PACKAGES */
 
+
+.packages{
+
+margin-top:35px;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+
+gap:25px;
+
+}
+
+
+
+.package{
+
+
+position:relative;
+
+background:#07111f;
+
+padding:30px;
+
+border-radius:25px;
+
+
+border:2px solid #d4af37;
+
+
+box-shadow:
+
+0 0 15px #d4af37,
+
+inset 0 0 15px #d4af3744;
+
+
+transition:.4s;
+
+}
+
+
+
+.package:hover{
+
+transform:translateY(-12px);
+
+box-shadow:
+
+0 0 35px #ffd700,
+
+inset 0 0 20px #ffd70055;
+
+}
+
+
+
+.package h3{
+
+color:white;
+
+font-size:28px;
+
+}
+
+
+
+.price{
+
+
+font-size:30px;
+
+font-weight:800;
+
+margin:15px 0;
+
+
+color:#ffd700;
+
+
+text-shadow:
+
+0 0 15px #ffd700;
+
+
+}
+
+
+
+.package p{
+
+color:#cbd5e1;
+
+margin-bottom:20px;
+
+}
+
+
+
+.package button{
+
+
+border:none;
+
+padding:12px 25px;
+
+border-radius:30px;
+
+
+background:
+
+linear-gradient(90deg,#ffd700,#b8860b);
+
+
+color:black;
+
+font-weight:bold;
+
+cursor:pointer;
+
+}
+
+
+
+.popular{
+
+
+transform:scale(1.08);
+
+border:3px solid gold;
+
+
+}
+
+
+
+.badge{
+
+
+position:absolute;
+
+top:-15px;
+
+right:20px;
+
+
+background:
+
+linear-gradient(90deg,#ffd700,#ff9900);
+
+
+color:black;
+
+
+padding:8px 15px;
+
+border-radius:20px;
+
+font-size:12px;
+
+font-weight:bold;
+
+
+box-shadow:0 0 20px gold;
+
+}
 
 @media(max-width:768px){
 
@@ -558,15 +725,108 @@ Apartments, hotels, schools and businesses.
 
 
 
-<div class="card">
+<div class="card ppoe-card">
 
 <div style="font-size:45px">🔐</div>
 
 <h3>PPOE Setup</h3>
 
 <p>
-Authentication, vouchers, billing systems.
+User authentication, bandwidth control and internet packages.
 </p>
+
+
+<div class="packages">
+
+
+<div class="package">
+
+<h3>10 Mbps</h3>
+
+<div class="price">
+KES 1,500
+</div>
+
+<p>
+Best for normal usage
+</p>
+
+<button>Choose Plan</button>
+
+</div>
+
+
+
+<div class="package">
+
+<h3>18 Mbps</h3>
+
+<div class="price">
+KES 2,000
+</div>
+
+<p>
+Best for browsing
+</p>
+
+<button>Choose Plan</button>
+
+</div>
+
+
+
+
+<div class="package">
+
+<h3>30 Mbps</h3>
+
+<div class="price">
+KES 2,500
+</div>
+
+<p>
+Browsing & video calls
+</p>
+
+<button>Choose Plan</button>
+
+</div>
+
+
+
+
+<div class="package popular">
+
+
+<div class="badge">
+MOST POPULAR
+</div>
+
+
+<h3>60 Mbps</h3>
+
+
+<div class="price">
+KES 3,500
+</div>
+
+
+<p>
+Best for streaming & browsing
+</p>
+
+
+<button>
+Choose Plan
+</button>
+
+
+</div>
+
+
+
+</div>
+
 
 </div>
 
