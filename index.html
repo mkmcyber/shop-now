@@ -466,26 +466,32 @@ margin-bottom:20px;
 
 
 
-.package button{
+.package-btn{
 
-
-border:none;
+display:inline-block;
 
 padding:12px 25px;
 
 border-radius:30px;
 
-
-background:
-
-linear-gradient(90deg,#ffd700,#b8860b);
-
+background:linear-gradient(90deg,#ffd700,#b8860b);
 
 color:black;
 
 font-weight:bold;
 
-cursor:pointer;
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+
+.package-btn:hover{
+
+transform:scale(1.08);
+
+box-shadow:0 0 25px gold;
 
 }
 
@@ -751,7 +757,9 @@ KES 1,500
 Best for normal usage
 </p>
 
-<button>Choose Plan</button>
+<a class="package-btn" href="https://wa.me/254791398996?text=Hello%20MKMTech%20Hub,%20I%20want%20the%2010Mbps%20package%20(KES%201500)">
+Choose Plan
+</a>
 
 </div>
 
@@ -769,7 +777,9 @@ KES 2,000
 Best for browsing
 </p>
 
-<button>Choose Plan</button>
+<a class="package-btn" href="https://wa.me/254791398996?text=Hello%20MKMTech%20Hub,%20I%20want%20the%2018Mbps%20package%20(KES%202000)">
+Choose Plan
+</a>
 
 </div>
 
@@ -788,7 +798,9 @@ KES 2,500
 Browsing & video calls
 </p>
 
-<button>Choose Plan</button>
+<a class="package-btn" href="https://wa.me/254791398996?text=Hello%20MKMTech%20Hub,%20I%20want%20the%2030Mbps%20package%20(KES%202500)">
+Choose Plan
+</a>
 
 </div>
 
@@ -816,10 +828,9 @@ Best for streaming & browsing
 </p>
 
 
-<button>
+<a class="package-btn" href="https://wa.me/254791398996?text=Hello%20MKMTech%20Hub,%20I%20want%20the%2060Mbps%20package%20(KES%203500)">
 Choose Plan
-</button>
-
+</a>
 
 </div>
 
