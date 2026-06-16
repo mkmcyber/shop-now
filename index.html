@@ -370,13 +370,22 @@ color:#aaa;
 
 .packages{
 
-margin-top:35px;
+display:none;
 
-display:grid;
+margin-top:35px;
 
 grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
 
 gap:25px;
+
+animation:popup .5s ease;
+
+}
+
+
+.packages.show{
+
+display:grid;
 
 }
 
@@ -1191,7 +1200,17 @@ a.style.display==="block"
 
 
 </script>
+<script>
 
+function showPackages(){
+
+let packages = document.getElementById("packages");
+
+packages.classList.toggle("show");
+
+}
+
+</script>
 
 </body>
 
