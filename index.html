@@ -566,6 +566,85 @@ justify-content:center;
 
 }
 
+/* VIEW PACKAGE BUTTON */
+
+.view-btn{
+
+margin-top:20px;
+
+padding:14px 35px;
+
+border:none;
+
+border-radius:30px;
+
+background:linear-gradient(90deg,#00e5ff,#2563eb);
+
+color:white;
+
+font-weight:bold;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+
+.view-btn:hover{
+
+transform:scale(1.08);
+
+box-shadow:0 0 25px #00e5ff;
+
+}
+
+
+/* HIDDEN PACKAGES */
+
+
+.packages{
+
+display:none;
+
+margin-top:35px;
+
+animation:popup .5s ease;
+
+}
+
+
+
+.packages.show{
+
+display:grid;
+
+}
+
+
+
+@keyframes popup{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+  
 
 </style>
 
@@ -741,11 +820,13 @@ Apartments, hotels, schools and businesses.
 User authentication, bandwidth control and internet packages.
 </p>
 
+<button class="view-btn" onclick="showPackages()">
+View Packages
+</button>
 
-<div class="packages">
+<div class="packages" id="packages">
 
 
-<div class="package">
 
 <h3>10 Mbps</h3>
 
